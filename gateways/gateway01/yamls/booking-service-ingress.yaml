@@ -5,7 +5,7 @@ metadata:
   namespace: dp01-dev
 spec:
   rules:
-    - host: booking-service-dp01-dev.<cluster sub-domain>
+    - host: booking-service-dp01-dev.apps.sno-ajo-1.snoajo1.com
 # replace <cluster sub-domain> with output from: oc get ingresscontrollers/default -n openshift-ingress-operator -o jsonpath='{.status.domain}'
       http:
         paths:
